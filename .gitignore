@@ -1,0 +1,36 @@
+# Archives
+*.tar.gz
+*.tar.xz
+*.tar.zst
+*.zip
+
+# Build directories
+src/
+pkg/
+
+# Package files
+*.pkg.tar.*
+*.pkg.tar.zst
+
+# Source files (if downloading external sources)
+*.deb
+*.rpm
+*.tar.bz2
+
+# Editor files
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/

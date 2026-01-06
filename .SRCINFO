@@ -1,0 +1,24 @@
+pkgbase = packettracer-bin
+	pkgdesc = Cisco Packet Tracer is a powerful network simulation program
+	pkgver = 9.0
+	pkgrel = 1
+	url = https://www.netacad.com/courses/packet-tracer
+	install = packettracer-bin.install
+	arch = x86_64
+	license = custom
+	depends = coreutils
+	depends = fuse2
+	depends = zstd
+	depends = pcre2
+	depends = sudo
+	depends = xdg-utils
+	depends = gtk-update-icon-cache
+	depends = glibc
+	depends = gcc-libs
+	depends = bash
+	options = !strip
+	options = !emptydirs
+	source = CiscoPacketTracer_900_Ubuntu_64bit.deb
+	sha256sums = dd9ac0d4c7fc37dcb68f627fd7c7e6fa6d4200c14492526e5618b9bd172ed920
+
+pkgname = packettracer-bin

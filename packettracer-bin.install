@@ -1,0 +1,34 @@
+post_install() {
+    update-desktop-database -q
+    gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor 2>/dev/null || true
+    
+    echo ""
+    echo "==> Cisco Packet Tracer has been installed!"
+    echo "==> You can launch it using:"
+    echo "    - packettracer.AppImage (from command line)"
+    echo "    - packettracer-bin (shortcut)"
+    echo "    - Or from your application menu"
+    echo ""
+    echo "==> Note: First launch may take longer as it sets up the environment"
+    echo ""
+}
+
+post_upgrade() {
+    post_install
+    
+    echo ""
+    echo "==> Cisco Packet Tracer has been upgraded!"
+    echo "==> Your saved files and configurations should remain intact"
+    echo ""
+}
+
+post_remove() {
+    update-desktop-database -q
+    gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor 2>/dev/null || true
+    
+    echo ""
+    echo "==> Cisco Packet Tracer has been removed"
+    echo "==> Your personal files in ~/.config/Cisco\ Packet\ Tracer/ remain"
+    echo "==> To completely remove all data, delete that directory manually"
+    echo ""
+}
