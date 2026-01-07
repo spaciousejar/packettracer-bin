@@ -18,7 +18,7 @@ pkgbase = packettracer-bin
 	depends = bash
 	options = !strip
 	options = !emptydirs
-	source = CiscoPacketTracer_900_Ubuntu_64bit.deb
+	source = https://github.com/spaciousejar/packettracer-bin/releases/download/9.0/CiscoPacketTracer_900_Ubuntu_64bit.deb
 	sha256sums = dd9ac0d4c7fc37dcb68f627fd7c7e6fa6d4200c14492526e5618b9bd172ed920
 
 pkgname = packettracer-bin

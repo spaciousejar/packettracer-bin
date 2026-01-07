@@ -9,8 +9,8 @@ license=('custom')
 depends=('coreutils' 'fuse2' 'zstd' 'pcre2' 'sudo' 'xdg-utils' 'gtk-update-icon-cache' 'glibc' 'gcc-libs' 'bash')
 options=('!strip' '!emptydirs')
 install=packettracer-bin.install
-source=("CiscoPacketTracer_900_Ubuntu_64bit.deb")
-sha256sums=('SKIP')
+source=("https://github.com/spaciousejar/packettracer-bin/releases/download/9.0/CiscoPacketTracer_900_Ubuntu_64bit.deb")
+sha256sums=('dd9ac0d4c7fc37dcb68f627fd7c7e6fa6d4200c14492526e5618b9bd172ed920')
 
 package() {
     # Extract the deb file
